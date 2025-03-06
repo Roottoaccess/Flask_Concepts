@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Welcome to Flask Workshop</h1>
+    <h3>Welcome {{ firstname }} to our website !!</h3>
+    <p>{{ stuff|safe }}</p>
+    <hr>
+    <h3>Favorate Fruits</h3>
+    <!-- Using looping statements using jinja2 -->
+    {% for i in fruits %}
+        {% if i == 'apple' %}
+            {{ i + 'watch'}} <br>
+        {% else %}
+            {{ i }} <br>
+        {% endif %}
+    {% endfor %}
+<br><br>
+    <!-- Accessing the elements by there index  -->
+     {{ fruits.0 }}
+</body>
+</html>
